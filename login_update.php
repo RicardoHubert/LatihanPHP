@@ -1,16 +1,5 @@
-<?php
-
-include "db.php";
-
-$query = "SELECT * FROM users";
-$result = mysqli_query($koneksi, $query);
-
-if(!$result){
-	die('Query Failed' . mysqli_error($koneksi));
-}
-
-?>
-
+<?php include "db.php"; ?>
+<?php include "functions.php"; ?>
 
 <!DOCTYPE html>
 <html>
@@ -34,10 +23,7 @@ if(!$result){
 			<div class="form-group">
 				<select name="id" class="form-control">
 					<?php
-					while($row = mysqli_fetch_assoc($result)){
-						$id = $row['id'];
-						echo "<option value='$id'>$id</option>";
-					}
+					showAllUserId();
 					?>
 				</select>
 			</div>
