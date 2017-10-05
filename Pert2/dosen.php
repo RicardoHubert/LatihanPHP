@@ -17,7 +17,7 @@
 			<th>Action</th>
 		</tr>
 	</thead>
-	<tbody>
+<tbody>
 
 		<?php
 			while($row = mysqli_fetch_assoc($hasil)){
