@@ -5,7 +5,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Phone Book</title>
+	<title>Data Mahasiswa Kalbis</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+	integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+	crossorigin="anonymous">
+	<style>
+		#tbody{background:#000000;}
+		#menu{background:#CCCCFF;}
+		#konten{background:#CCCC33;}
+		#filter{background:#33FFCC;}
+		#search{background:#33FFCC;}
+		#footer{background:cyan;}
+	</style>
 </head>
 <body>
 <h1>Phone Book</h1>
