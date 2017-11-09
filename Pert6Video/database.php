@@ -32,13 +32,15 @@ if(mysqli_connect_errno()){
 		<title>Databases</title>
 	</head>
 	<body>
-
+			<ul>
 			<?php
-			while($row = mysqli_fetch_row($result)){
-				var_dump($row);
-				echo "<hr />";
+			while($subject = mysqli_fetch_assoc($result)){
+				?>
+				<li><?php echo $subject["menu_name"]; ?></li>
+			<?php
 			}
 		?>
+	</ul>
 		<?php
 		mysqli_free_result($result);
 		?>
